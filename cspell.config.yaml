@@ -12,14 +12,15 @@ words:
   - Docstrings
   - fastapi
   - loguru
+  - psutil
   - pydantic
   - Pydantic
   - pytest
+  - pythonpath
   - pywin
-  - psutil
+  - TDEADLOCK
+  - testpaths
   - uvicorn
   - venv
-  - pythonpath
-  - testpaths
 ignoreWords: []
 import: []

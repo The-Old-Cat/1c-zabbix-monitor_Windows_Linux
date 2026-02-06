@@ -1,0 +1,33 @@
+# 1c-zabbix-monitor Configuration
+# Приоритет: Environment Variables > Default values
+
+# Путь к RAC будет выбран автоматически в Python коде на основе текущей ОС
+rac_path: "${RAC_PATH}"
+
+rac:
+  host: "${RAC_HOST:localhost}"
+  port: ${RAC_PORT:1545}
+  user: "${RAC_USER:admin}"
+  password: "${RAC_PASSWORD}"
+
+cache:
+  ttl: ${CACHE_TTL:60}
+
+# Путь к логу также считывается из переменной, которую мы зададим в .env
+logs:
+  sql:
+    path: "${LOG_PATH_SQL:C:/1c_log/sql}"
+  locks:
+    path: "${LOG_PATH_LOCKS:C:/1c_log/locks}"
+  calls:
+    path: "${LOG_PATH_CALLS:C:/1c_log/calls}"
+  errors:
+    path: "${LOG_PATH_ERRORS:C:/1c_log/errors}"
+session:
+  threshold: ${SESSION_THRESHOLD:50}
+
+zabbix:
+  server: "${ZABBIX_SERVER:localhost}"
+  port: ${ZABBIX_PORT:10051}
+
+platform: "${PLATFORM:auto}"

@@ -1,0 +1,53 @@
+################################################
+# РАСКОММЕНТИРОВАТЬ И ИЗМЕНИТЬ ПОД СВОИ ДАННЫЕ #
+################################################
+
+# 1c-zabbix-monitor Configuration
+# Приоритет: Environment Variables > Default values
+
+# Путь к RAC будет выбран автоматически в Python коде на основе текущей ОС
+# Windows
+# rac_path: "${RAC_PATH_WINDOWS:/path/to/1cv8/x.x.x.x/bin/rac.exe}"
+# Linux
+# rac_path: "${RAC_PATH_LINUX:/opt/1cv8/x86_64/rac}"
+
+# rac:
+#   host: "${RAC_HOST:localhost}"
+#   port: ${RAC_PORT:1545}
+#   user: "${RAC_USER:admin}"
+#   password: "${RAC_PASSWORD}"
+
+# cache:
+#   ttl: ${CACHE_TTL:60}
+
+# Пути к логам (кроссплатформенные)
+# logs:
+#   sql:
+#     # Windows
+#     path: "${LOG_PATH_SQL_WINDOWS:/path/to/1c/logs/Query1c}"
+#     # Linux
+#     # path: "${LOG_PATH_SQL_LINUX:/var/log/1c/Query1c}"
+#   locks:
+#     # Windows
+#     path: "${LOG_PATH_LOCKS_WINDOWS:/path/to/1c/logs/zabbix/locks}"
+#     # Linux
+#     # path: "${LOG_PATH_LOCKS_LINUX:/var/log/1c/zabbix/locks}"
+#   calls:
+#     # Windows
+#     path: "${LOG_PATH_CALLS_WINDOWS:/path/to/1c/logs/zabbix/calls}"
+#     # Linux
+#     # path: "${LOG_PATH_CALLS_LINUX:/var/log/1c/zabbix/calls}"
+#   errors:
+#     # Windows
+#     path: "${LOG_PATH_ERRORS_WINDOWS:/path/to/1c/logs/srv}"
+#     # Linux
+#     # path: "${LOG_PATH_ERRORS_LINUX:/var/log/1c/srv}"
+
+# session:
+#   threshold: ${SESSION_THRESHOLD:50}
+
+# zabbix:
+#   server: "${ZABBIX_SERVER:localhost}"
+#   port: ${ZABBIX_PORT:10051}
+
+# platform: "${PLATFORM:auto}"

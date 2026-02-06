@@ -8,7 +8,12 @@ dependencies = [
     "loguru>=0.7.2",
     "pydantic>=2.6.0",
     "psutil>=5.9.0",
+    "pyyaml>=6.0.3",
+    "python-dotenv>=1.0.0",
 ]
+
+[project.scripts]
+"1c-zabbix-monitor" = "1c_zabbix_monitor_windows_linux_cli:main"
 
 [dependency-groups]
 dev = [
@@ -35,10 +40,7 @@ pythonpath = ["src"]
 testpaths = ["tests"]
 
 [tool.pylint."MESSAGES CONTROL"]
-disable = [
-    "C0114","C0115","C0116",
-    "R0903","W0612"
-]
+disable = ["C0114", "C0115", "C0116", "R0903", "W0612"]
 
 [tool.pylint.MASTER]
 load-plugins = ["pylint_pydantic"]
