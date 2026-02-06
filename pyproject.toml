@@ -1,7 +1,7 @@
 [project]
-name = "project_name"
+name = "1c-zabbix-monitor_Windows_Linux"
 version = "0.1.0"
-description = "Project Description"
+description = "Универсальный агент на Python для мониторинга кластера 1С:Предприятие (8.3+) в Zabbix. Решение спроектировано с учетом высокой нагрузки: минимизирует количество обращений к кластеру и оптимизирует чтение логов."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -24,7 +24,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/project_name"]
+packages = ["src/1c-zabbix-monitor_Windows_Linux"]
 
 [tool.black]
 line-length = 100
