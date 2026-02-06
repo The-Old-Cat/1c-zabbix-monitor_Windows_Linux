@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+uv.lock
+dist/
+build/
+.pytest_cache/
+.pylintdash/
+.pylintrc_v2
+.qodo
+.cspell/
+logs/*
+!logs/.gitkeep
+data/*
+!data/.gitkeep
+

@@ -1,0 +1,10 @@
+# Custom Dictionary Words
+конфигами
+asyncio
+Docstrings
+fastapi
+pydantic
+Pydantic
+pytest
+uvicorn
+venv

@@ -1,0 +1,73 @@
+{
+    // --- ИНТЕРФЕЙС ---
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "explorer.compactFolders": false,
+    // --- ФОРМАТИРОВАНИЕ И ТОМL ---
+    "editor.formatOnSave": true,
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml",
+        "editor.suggestSelection": "first"
+    },
+    "evenBetterToml.schema.associations": {
+        "pyproject.toml": "https://json.schemastore.org/pyproject.json"
+    },
+    // --- ИИ (Qodo & Codeium) ---
+    "qodo.testFramework": "pytest",
+    "qodo.suggestions.showCodeLens": true,
+    "codeium.enableConfig": {
+        "*": true,
+        "markdown": false
+    },
+    // --- PYTHON АНАЛИЗ ---
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "pylint.args": [
+        "--rcfile=${workspaceFolder}/pyproject.toml"
+    ],
+    "python.analysis.indexing": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "fastapi",
+            "depth": 3
+        },
+        {
+            "name": "pydantic",
+            "depth": 3
+        }
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    // --- ТЕСТИРОВАНИЕ ---
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests",
+        "--ignore=.venv"
+    ],
+    // --- ТЕРМИНАЛ И ПРОЧЕЕ ---
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "cSpell.language": "en,ru",
+    "cSpell.userWords": [
+        " Безопасная",
+        "Загружаем",
+        "Импортировать",
+        "Каталоги",
+        "comcntr",
+        "Doker",
+        "infobase",
+        "ovpn",
+        "sysrq",
+        "pylint"
+    ],
+    "git.autofetch": true
+}

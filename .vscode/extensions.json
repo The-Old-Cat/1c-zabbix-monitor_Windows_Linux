@@ -1,0 +1,23 @@
+{
+    "recommendations": [
+        // --- Искусственный интеллект ---
+        "Codeium.codeium",
+        "Qodo.codium",
+        "qwenlm.qwen-code-vscode-ide-companion",
+        // --- Python и FastAPI ---
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-python.pylint",
+        "ms-python.debugpy",
+        "mikestead.dotenv",
+        // --- Верстка и инструменты ---
+        "formulahendry.auto-rename-tag",
+        "pranaygp.vscode-css-peek",
+        "ritwickdey.liveserver",
+        "naumovs.color-highlight",
+        "Zignd.html-css-class-completion",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml"
+    ]
+}
